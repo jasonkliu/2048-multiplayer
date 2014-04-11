@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								}, 3000);
 							};
 
-				   			var gameTimeLeft = 120;//game timer
+				   			var gameTimeLeft = 12000;//game timer
 				   			var timer = setInterval(function () {
 								var sec; 
 	    						if (gameTimeLeft % 60 === 0)
