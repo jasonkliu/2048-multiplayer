@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								}, 3000);
 							};
 
-				   			var gameTimeLeft = 12000;//game timer
+				   			var gameTimeLeft = 0;//game timer
 				   			var timer = setInterval(function () {
 								var sec; 
 	    						if (gameTimeLeft % 60 === 0)
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	    						 	sec = gameTimeLeft % 60;
 	      						var min = Math.floor(gameTimeLeft/60);
 				   				$('#player-msg').html('<div id="timer"><strong>' + min + ':' + sec + '</strong></div>');
-				   				gameTimeLeft--;
+				   				gameTimeLeft++;
 				   				if (gameTimeLeft === -1) {
 				   					gameOver(timer);
 				   				}
